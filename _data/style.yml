@@ -5,7 +5,7 @@ black: "#000"
 bglight: "#c5c2c1"
 
 #Image Customization
-header-image: "../img/header.png"
+header-image: "../img/header.JPG"
 contact-image: "../img/footer.png"
 #Font Awesome icon for portfolio grid when an item is hovered over
 #portfolio-icon: fas fa-expand-arrows-alt fa-3x #default: fas fa-plus fa-3x

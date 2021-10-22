@@ -50,10 +50,10 @@ en: &DEFAULT_EN
     section: about
   
   contact:
-    text: "
-    <br/> 33 quai du Stade, 88100 Saint-Dié-des-Vosges
-    <br/> 06 37 00 71 18
-    <br/> marie@studiobienleche.com "
+    img: "assets\\img\\footer.png"
+    text: "06 37 00 71 18
+    <br/> marie@studiobienleche.com 
+    <br/> 33 quai du Stade, 88100 Saint-Dié-des-Vosges"
     section: contact
 
   footer:

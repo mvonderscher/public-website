@@ -1,7 +1,11 @@
 // Styling for the contact section
+.page-section.small-padding {
+  padding-bottom: 0px;
+  padding-top: 25px;
+}
+
 section#contact {
-  //background-color: $primary;
-  background-image: url("#{$contact-image}");
+  background-color: $white;
   background-repeat: no-repeat;
   background-position: center;
   .section-heading {
