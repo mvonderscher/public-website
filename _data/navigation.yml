@@ -7,24 +7,23 @@
 # How to use:
 # {{ site.data.navigation[site.locale].nav.<var_name> | default: 'text' }}
 
+instagram: https://www.instagram.com/marie.lesquais/
+
 # English (default)
 # -----------------
 en: &DEFAULT_EN
   nav:
-    - title: "Services"
-      section: services
-    - title: "Portfolio"
+    - title: "Réalisations"
       section: portfolio
-    - title: "About"
+    - title: "Prestations"
+      section: services
+    - title: "Le Studio"
       section: about
-    - title: "Timeline"
-      section: timeline
-    - title: "Team"
-      section: team
+    - title: "Blog"
+      section: blog
+      context: blog
     - title: "Contact"
       section: contact
-    - title: "Theme Source"
-      url: https://github.com/raviriley/agency-jekyll-theme/
 en-US:
   <<: *DEFAULT_EN
 en-CA:
@@ -34,25 +33,10 @@ en-GB:
 en-AU:
   <<: *DEFAULT_EN
 
-# Spanish
-# -------
-es: &DEFAULT_ES
-  nav:
-    - title: "Servicios"
-      section: servicios
-    - title: "Portafolio"
-      section: portafolio
-    - title: "Sobre Nosotros"
-      section: nosotros
-    - title: "Cronología"
-      section: cronologia
-    - title: "Equipo"
-      section: equipo
-    - title: "Contáctenos"
-      section: contacto
-    - title: "Fuente de la plantilla"
-      url: https://github.com/raviriley/agency-jekyll-theme/
-es-ES:
-  <<: *DEFAULT_ES
-es-CO:
-  <<: *DEFAULT_ES
+# French
+# -----------------
+fr:
+  <<: *DEFAULT_EN
+  
+fr-FR:
+  <<: *DEFAULT_EN

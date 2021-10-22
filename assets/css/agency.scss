@@ -9,6 +9,11 @@
 $primary: {{ site.data.style.highlight | default: "#fed136" }} !default;
 $white: {{ site.data.style.white | default: "#fff" }} !default;
 $black: {{ site.data.style.black | default: "#000" }} !default;
+$bglight: {{ site.data.style.bglight | default: "#000" }} !default;
+
+.custom-bg-light {
+    background-color: $bglight !important;
+}
 
 // Custom Images
 $header-image: "{{ site.data.style.header-image }}";

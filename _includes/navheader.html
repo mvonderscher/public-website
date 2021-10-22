@@ -19,12 +19,31 @@
             {%- if link.url -%}
               <a class="nav-link js-scroll-trigger" href="{{ link.url }}">{{ link.title }}</a>
             {%- else if link.section -%}
-              <a class="nav-link js-scroll-trigger" href="#{{ link.section }}">{{ link.title }}</a>
+              {%- if link.context -%}
+                <a 
+                  class="nav-link js-scroll-trigger"
+                  href="#{{ link.section }}"
+                  onclick="$('.context').addClass('hiddenClass');$('.{{link.context}}').removeClass('hiddenClass');">{{ link.title }}</a>
+              {%- else -%}
+              <a 
+                class="nav-link js-scroll-trigger"
+                href="#{{ link.section }}"
+                onclick="$('.context').addClass('hiddenClass');$('.main').removeClass('hiddenClass');">{{ link.title }}</a>
+              {%- endif -%}
+              
             {%- else -%}
               <a class="nav-link js-scroll-trigger" href="#">{{ link.title }}</a>
             {%- endif -%}
           </li>
         {% endfor %}
+          <li class="nav-item">
+            <a
+            class="nav-link js-scroll-trigger"
+            href="{{ site.data.navigation.instagram }}"
+            target="_blank">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </li>
         </ul>
       </div>
     </div>
