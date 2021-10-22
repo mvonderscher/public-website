@@ -15,14 +15,14 @@
 remote_theme: raviriley/agency-jekyll-theme
 
 url    : "https://www.studiobienleche.com" # the base hostname & protocol for your site, e.g. http://example.com
-baseurl: "/agency-jekyll-theme-starter" # the subpath of your site, e.g. /blog
+baseurl: "" # the subpath of your site, e.g. /blog
 
 title      : Studio bienléché. Décoration & architecture d'intérieur
 email      : marie@studiobienleche.com #this is also the email contact forms will go to
 description: "Site description"
 author     : Marie VONDERSCHER
 logo:     #optional, defaults to site title
-  path: assets\img\clients\studio-bienleche.png
+  path: /assets/img/clients/studio-bienleche.png
   # height: 60 #height in px, defaults to 52px
 
 locale: "fr-FR" # See available languages in _data/sitetext.yml
@@ -34,6 +34,8 @@ collections:
   portfolio:
 
 markdown: kramdown
+permalink: /:categories/:title
+
 
 # Uncomment following line to use Formspree form ID based URL instead of email based URL
 # Details: https://help.formspree.io/hc/en-us/articles/360017735154-How-to-prevent-spam
@@ -41,3 +43,4 @@ markdown: kramdown
 
 plugins:
   - jekyll-remote-theme
+  

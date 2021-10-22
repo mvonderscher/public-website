@@ -21,7 +21,6 @@ en: &DEFAULT_EN
       section: about
     - title: "Blog"
       section: blog
-      context: blog
     - title: "Contact"
       section: contact
 en-US:

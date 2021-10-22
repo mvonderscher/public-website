@@ -49,6 +49,15 @@ en: &DEFAULT_EN
     body: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde. **Markdown** supported."
     section: about
   
+  blog:
+    linkText: "Lire la suite ... "
+    title : "Découvrez nos derniers articles"
+    text : "a rédiger"
+    archives: "Voir les Archives"
+    all:
+      title : "Découvrez tout nos articles"
+      text : "a rédiger"
+
   contact:
     img: "assets\\img\\footer.png"
     text: "06 37 00 71 18

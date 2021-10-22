@@ -22,12 +22,12 @@
               {%- if link.context -%}
                 <a 
                   class="nav-link js-scroll-trigger"
-                  href="#{{ link.section }}"
+                  href="{{site.url}}#{{ link.section }}"
                   onclick="$('.context').addClass('hiddenClass');$('.{{link.context}}').removeClass('hiddenClass');">{{ link.title }}</a>
               {%- else -%}
               <a 
                 class="nav-link js-scroll-trigger"
-                href="#{{ link.section }}"
+                href="{{site.url}}#{{ link.section }}"
                 onclick="$('.context').addClass('hiddenClass');$('.main').removeClass('hiddenClass');">{{ link.title }}</a>
               {%- endif -%}
               
